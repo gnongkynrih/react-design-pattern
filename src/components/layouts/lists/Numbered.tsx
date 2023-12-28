@@ -12,10 +12,10 @@ export const NumberedList = ({
   return (
     <>
       {items.map((item, i) => (
-        <>
+        <div key={i}>
           <h3> {i + 1} </h3>
-          <ItemComponent key={i} {...{ [sourceName]: item }} />
-        </>
+          <ItemComponent {...{ [sourceName]: item }} />
+        </div>
       ))}
     </>
   );
