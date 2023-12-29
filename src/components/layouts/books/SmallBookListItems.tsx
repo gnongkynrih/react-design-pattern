@@ -1,4 +1,4 @@
-import { Book } from "../types";
+import { Book } from "../../../types";
 export const SmallBookListItem = ({ book }: { book: Book }) => {
   const { name, price } = book;
   return (

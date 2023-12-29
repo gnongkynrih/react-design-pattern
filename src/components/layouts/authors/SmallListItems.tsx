@@ -1,6 +1,6 @@
-import { author } from "../types";
+import { User } from "../../../types";
 
-export const SmallAuthorListItem = ({ author }: { author: author }) => {
+export const SmallAuthorListItem = ({ author }: { author: User }) => {
   const { name, age } = author;
   return (
     <p>
